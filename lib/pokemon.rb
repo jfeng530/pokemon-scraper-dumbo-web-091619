@@ -10,12 +10,11 @@ class Pokemon
   end 
   
   def self.save(name, type, db)
-    def save
     if self.id
       self.update
     else
       sql = <<-SQL
-        INSERT INTO students (name, grade)
+        INSERT INTO pokemons (name, grade)
         VALUES (?, ?)
       SQL
     
